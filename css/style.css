@@ -1,0 +1,121 @@
+.wrapper {
+    background-image: url(../img/fon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 80vh;
+    padding: 0 10px;
+}
+
+.bottom_block {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 230, 0.953);
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.title_block {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.bottom_block p {
+    font-size: 16px;
+}
+
+.final-time {
+    font-size: 20px;
+    color: #faffcf;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px black;
+    font-weight:600;
+}
+
+
+/* modal start */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.59);
+    z-index: 99999;
+}
+.modal-wrap {
+    width: 100%;
+    background: #42b7da;
+    overflow: hidden;
+    padding: 30px 10%;
+    height: 400px;
+}
+.modal-wrap ul {
+    list-style: none;
+    padding-left: 2px;
+    margin-top: 12px;
+}
+.modal-desc {
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+.modal h2 {
+    color: #faffcf;
+    font-size: 34px;
+    text-shadow: 1px 1px black;
+}
+.modal-text,
+.modal li {
+    color: #fff1db;
+    font-size: 18px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+}
+/* modal end */
+
+
+/* modal finish */
+
+.modal-name,
+.modal-lose {
+    display: none;
+}
+
+.modal-lose {
+    top: 0;
+}
+
+.btn-block {
+    background: #4a4a4a;
+    cursor: no-drop;
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    opacity: 0;
+    z-index: 10;
+}
+
+.wreath {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    transform: rotate( 220deg);
+    z-index: 0;
+}
+
+.start_modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

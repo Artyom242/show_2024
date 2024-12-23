@@ -1,0 +1,125 @@
+
+/* block */
+.dedMoroz {
+    position: absolute;
+    z-index: 2;
+    background: url("http://inverser.pro/images/Ded_Moroz.png") 50% 0 no-repeat;
+    width: 341px;
+    height: 233px;
+    margin: 0 auto -36px auto;
+    bottom: 0;
+    right: 80px;
+  }
+  .dedMoroz_ryka {
+    position: absolute;
+    z-index: 4;
+    bottom: 15px;
+    left: 3px;
+    width: 66px;
+    height: 57px;
+    will-change: transform;
+    border-radius: 42%;
+    background: #b61313;
+    box-shadow: -2px 2px rgba(0, 0, 0, 0.2), inset 2px -2px 7px rgba(0, 0, 0, 0.3);
+    animation: a1 20s ease infinite 7s;
+  }
+  .dedMoroz_overlay {
+    position: absolute;
+    z-index: 1;
+    bottom: 23px;
+    left: 59px;
+    width: 22px;
+    height: 13px;
+    background: #fff;
+  }
+  .dedMoroz_palets {
+    position: absolute;
+    z-index: -1;
+    bottom: 32px;
+    left: 58px;
+    width: 22px;
+    height: 13px;
+    will-change: transform;
+    border-radius: 35%;
+    background: #a61110;
+    animation: a2 20s ease infinite 7s;
+  }
+  .dedMoroz_rykav {
+    position: absolute;
+    z-index: -1;
+    bottom: 36px;
+    left: 0;
+    width: 73px;
+    height: 44px;
+    border-radius: 31px 31px 7px 7px;
+    background: #f1efef;
+  }
+  .dedMoroz_ryka_all {
+    position: absolute;
+    bottom: 0;
+    will-change: transform;
+    animation: a3 20s ease infinite 7s;
+  }
+  /*Если мы используем translate3d, то подключаем видеокарту*/
+  @keyframes a1 {
+    40% {
+      border-radius: 42%;
+      transform: translate3d(0, 0, 0);
+      height: 57px;
+    }
+    50% {
+      border-radius: 42% 42% 6px 6px;
+      transform: translate3d(0, -30px, 0);
+      height: 69px;
+    }
+    60% {
+      border-radius: 42% 42% 6px 6px;
+      transform: translate3d(0, -30px, 0);
+      height: 69px;
+    }
+    80% {
+      border-radius: 42%;
+      transform: translate3d(0, 0, 0);
+      height: 57px;
+    }
+  }
+  @keyframes a2 {
+    40% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -15px, 0);
+    }
+    60% {
+      transform: translate3d(0, -15px, 0);
+    }
+    80% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes a3 {
+    50% {
+      transform: translate3d(0, 0, 0) rotate(0);
+    }
+    51% {
+      transform: translate3d(-15px, 0, 0);
+    }
+    52% {
+      transform: translate3d(15px, 0, 0);
+    }
+    53% {
+      transform: translate3d(-15px, 0, 0);
+    }
+    54% {
+      transform: translate3d(15px, 0, 0);
+    }
+    55% {
+      transform: translate3d(-15px, 0, 0);
+    }
+    56% {
+      transform: translate3d(15px, 0, 0);
+    }
+    57% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
